@@ -1,0 +1,25 @@
+{
+  "name": "portfolio2.0",
+  "version": "1.0.0",
+  "description": "Version 2 of personal portfolio",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jneeb/portfolio2.0.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jneeb/portfolio2.0/issues"
+  },
+  "homepage": "https://github.com/jneeb/portfolio2.0#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cli": "^1.2.2",
+    "gulp-sass": "^3.1.0"
+  }
+}
