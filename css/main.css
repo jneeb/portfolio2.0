@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+.mobileNav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .mobileNav span,
+  .mobileNav span:before,
+  .mobileNav span:after {
+    content: "";
+    display: block;
+    background-color: black;
+    height: 3px;
+    width: 30px;
+    position: relative;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+  .mobileNav span:before {
+    top: 10px; }
+  .mobileNav span:after {
+    top: -13px; }
+  .mobileNav:isOpen span {
+    background: transparent; }
+  .mobileNav:isOpen span:before,
+  .mobileNav:isOpen span:after {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: 0; }
+  .mobileNav:isOpen span:after {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    top: -3px; }
+  .mobileNav ul {
+    margin: 0;
+    padding: 0; }
+    .mobileNav ul li {
+      list-style: none; }
+      .mobileNav ul li a {
+        text-decoration: none;
+        color: black;
+        display: block; }
