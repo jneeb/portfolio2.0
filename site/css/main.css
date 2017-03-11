@@ -26,6 +26,8 @@ body {
         -ms-flex-align: center;
             align-items: center; }
     .desktopNav ul {
+      text-align: center;
+      width: 33.3%;
       margin: 0;
       padding: 0; }
       .desktopNav ul li {
@@ -36,7 +38,16 @@ body {
         .desktopNav ul li a {
           text-decoration: none;
           color: white;
-          display: block; } }
+          display: block; }
+    .desktopNav .socialLogos {
+      width: 33.3%; }
+      .desktopNav .socialLogos img {
+        padding: 15px 5px;
+        float: right;
+        height: 30px;
+        width: 30px; }
+    .desktopNav .siteLogo {
+      width: 33.3%; } }
 
 #home {
   display: -webkit-box;
