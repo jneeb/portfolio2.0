@@ -23,7 +23,7 @@ gulp.task('serve', function () {
 gulp.task('default', () =>
   gulp.src('assets/img/*')
       .pipe(imagemin())
-      .pipe(gulp.dest('img'))
+      .pipe(gulp.dest('./site/img'))
 );
 
 	gulp.watch('./assets/scss/*.sass', ['styles']);

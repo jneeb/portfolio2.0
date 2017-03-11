@@ -1,13 +1,32 @@
 #home
 	display: flex
-	flex-direction: column
 	align-items: center
 	justify-content: center
-	background: #eeeeee
+	flex-direction: column
 	height: 100vh
 
-	h1
-		font-family: $headerFont
+	img
+		position: absolute
+		object-fit: cover
+		width: 100%
+		height: 100vh
+		z-index: -2
 
-	h4
-		font-family: $cursiveFont
+	.homeText
+		position: fixed
+		text-align: center
+		font-size: 2em
+		color: white
+		z-index: -1
+
+		h1
+			font-family: $cursiveFont
+
+		h4
+			font-family: $headerFont
+			font-size: 0.8em
+
+.test
+	height: 2000px
+	background-color: #262626
+	z-index: 1

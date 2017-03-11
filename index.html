@@ -1,94 +1,53 @@
 <!DOCTYPE>
 <html>
-<head>
-	<title>Justin Neeb | Toronto Front-End Developer</title>
-	<meta charset="utf-8" />
-	<link rel="stylesheet" href="/site/css/main.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:600|Neuton|Pacifico" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<head>
+		<title>Justin Neeb | Toronto Front-End Developer</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="/site/css/main.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:600|Neuton|Pacifico" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
-<body>
-	<div class="door">
-		<img src="/site/img/doorTest.png" alt="" class="leftDoor">
-		<img src="/site/img/doorTest.png" alt="" class="rightDoor">
-	</div>
-	<div class="elevator">
-		<img src="/site/img/elevatorTest.png" alt="">
-	</div>
-	<div class="mobileNav">
-		<span></span>
-		<ul>
-			<li><a href="#home">HOME</a></li>
-			<li><a href="#portfolio">PORTFOLIO</a></li>
-			<li><a href="#about">ABOUT</a></li>
-			<li><a href="#contact">CONTACT</a></li>
-		</ul>
-	</div>
-	<div class="desktopNav">
-		<ul>
-			<li><a href="#home">HOME</a></li>
-			<li><a href="#portfolio">PORTFOLIO</a></li>
-			<li><a href="#about">ABOUT</a></li>
-			<li><a href="#contact">CONTACT</a></li>
-		</ul>
-	</div>
-	<section id="home">
-		<h1>Justin Neeb</h1>
-		<h4>Front-End Developer</h4>
-	</section>
-	<span class="floor"></span>
-	<section id="portfolio">
-		<div class="col-1">
-			<span></span>
-		</div>
-		<div class="col-1">
-			<h4>Responsive Web Design</h4>
-			<p>
-				Websites that are made to look good on any device.
-			</p>
-			<a href="#" class="btn">Visit Website</a>
-	</div>
-	</section>
-	<span class="floor"></span>
-	<section id="about">
-		<div class="col-1">
-			<span></span>
-		</div>
-		<div class="col-1">
-			<p>
-				Hi, I'm Justin Neeb, a freelance Front-End Developer based out of Toronto, Ontario. When I am not working for clients in Toronto, I'm working for online agencies or on my side projects.
-			</p>
-			<p>
-				I have a diverse skillset when it comes to Front-End (HTML, CSS3, Javascript, Responsive Web Design) which allows me to create modern, mobile-first websites.
-			</p>
-		</div>
-	</section>
-	<span class="floor"></span>
-	<section id="contact">
-		<div class="contactLinks">
-			<p>Toronto, ON</p>
-			<p>mail@justinneeb.com</p>
-			<a href=""></a>
-		</div>
-		<form action="" class="contactForm">
-			<input type="hidden" method="post">
-			<div class="contactRow-1">
-				<input type="text">
-				<input type="text">
+	<body>
+		<section id="nav">
+			<div class="mobileNav">
+				<ul>
+					<li><a id="mobileHomeLink" href="#home">Home</a></li>
+					<li><a id="mobilePortfolioLink" href="#portfolio">Portfolio</a></li>
+					<li><a id="mobileAboutLink" href="#about">About</a></li>
+					<li><a id="mobileContactLink" href="#contact">Contact</a></li>
+				</ul>
+				<span></span>
 			</div>
-			<div class="contactRow-2">
-				<textarea name="" id="" cols="30" rows="10"></textarea>
+
+			<div class="desktopNav">
+				<a href="home"><img src="#" alt="Logo"></a>
+				<ul>
+					<li><a href="#portfolio">WORK</a></li>
+					<li><a href="#about">ABOUT</a></li>
+					<li><a href="#contact">CONTACT</a></li>
+				</ul>
+				<div class="socialLogos">
+					<img src="https://github.com/jneeb" alt="GitHub">
+					<img src="https://codepen.io/Jneeb/" alt="CodePen">
+					<img src="https://www.linkedin.com/in/justin-neeb-a283b7a3/" alt="LinkedIn">
+				</div>
 			</div>
-			<div class="contactRow-3">
-				<input type="text">
+		</section>
+
+		<section id="home">
+			<img src="/site/img/hero.jpg" alt="HeroImg">
+			<div class="homeText">
+				<h1>Justin Neeb</h1>
+				<h4>Front-End Developer</h4>
 			</div>
-		</form>
-		<div id="map"></div>
-	</section>
-	<script async defer
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtOHi-D41sqHHFyKormXrD3gmeM8vIbXs&callback=initMap">
-		</script>
-	<script src="/site/functions.js" type="text/javascript"></script>
-</body>
+		</section>
+		<div class="test">
+
+		</div>
+		<script async defer
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtOHi-D41sqHHFyKormXrD3gmeM8vIbXs&callback=initMap">
+			</script>
+		<script src="/site/functions.js" type="text/javascript"></script>
+	</body>
 </html>
