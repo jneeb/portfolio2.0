@@ -1,14 +1,17 @@
-var burger = document.getElementById("mobileBurger");
-// var nav = document.getElementById("mobileNav");
+document.getElementById("mobileBurger").onclick = function() {
+	if (document.getElementById("mobileBurger").className !== "isOpen") {
+			document.getElementById("mobileBurger").className += "isOpen";
+		} else {
+			document.getElementById("mobileBurger").classList.remove("isOpen");
+	}
+}
 
-burger.onclick = burgerOpen;
+window.onscroll = function() {
+	var header = document.getElementById("desktopNav");
 
-function burgerOpen() {
-	if (burger.className !== "isOpen") {
-		burger.className += "isOpen";
-		// nav.className += "isOpen";
-	} else {
-		burger.classList.remove("isOpen");
-		// nav.classList.remove("isOpen");
+	if (window.pageYOffset >= window.innerHeight && header.className !== "onScroll") {
+		header.classList += "onScroll";
+	} else if(window.pageYOffset < window.innerHeight && header.className == "onScroll"){
+		header.classList.remove("onScroll");
 	}
 }
