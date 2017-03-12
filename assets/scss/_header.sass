@@ -4,9 +4,6 @@ body
 
 .mobileNav
 	position: fixed
-	// width: 90%
-	// height: 100vh
-	// background: black
 
 	ul
 		display: none
@@ -21,13 +18,17 @@ body
 	ul
 		display: none
 
-	.mobileBurger
+	.siteLogo
+		display: none
+
+	#mobileBurger
 		display: flex
 		align-items: center
 		justify-content: center
 		height: 50px
 		width: 50px
 		padding: 15px 15px
+		cursor: pointer
 
 		span,
 		span:before,
@@ -59,14 +60,6 @@ body
 			transform: rotate(-45deg)
 			top: -3px
 
-	.siteLogo
-		img
-			height: 50px
-			width: 50px
-			padding: 15px 30px
-			cursor: pointer
-
-
 	.socialLogos
 		display: none
 
@@ -97,7 +90,17 @@ body
 					display: block
 					cursor: pointer
 
-		.mobileBurger
+		.siteLogo
+			display: block
+
+			img
+				height: 50px
+				width: 50px
+				padding: 15px 30px
+				cursor: pointer
+
+
+		#mobileBurger
 			display: none
 
 		.socialLogos

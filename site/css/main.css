@@ -21,7 +21,9 @@ body {
   width: 100%; }
   .desktopNav ul {
     display: none; }
-  .desktopNav .mobileBurger {
+  .desktopNav .siteLogo {
+    display: none; }
+  .desktopNav #mobileBurger {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -33,10 +35,11 @@ body {
             justify-content: center;
     height: 50px;
     width: 50px;
-    padding: 15px 15px; }
-    .desktopNav .mobileBurger span,
-    .desktopNav .mobileBurger span:before,
-    .desktopNav .mobileBurger span:after {
+    padding: 15px 15px;
+    cursor: pointer; }
+    .desktopNav #mobileBurger span,
+    .desktopNav #mobileBurger span:before,
+    .desktopNav #mobileBurger span:after {
       content: "";
       display: block;
       background-color: white;
@@ -45,28 +48,23 @@ body {
       position: relative;
       -webkit-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out; }
-    .desktopNav .mobileBurger span:before {
+    .desktopNav #mobileBurger span:before {
       top: 10px; }
-    .desktopNav .mobileBurger span:after {
+    .desktopNav #mobileBurger span:after {
       top: -13px; }
-    .desktopNav .mobileBurger.isOpen span {
+    .desktopNav #mobileBurger.isOpen span {
       background: transparent; }
-    .desktopNav .mobileBurger.isOpen span:before,
-    .desktopNav .mobileBurger.isOpen span:after {
+    .desktopNav #mobileBurger.isOpen span:before,
+    .desktopNav #mobileBurger.isOpen span:after {
       -webkit-transform-origin: center;
               transform-origin: center;
       -webkit-transform: rotate(45deg);
               transform: rotate(45deg);
       top: 0; }
-    .desktopNav .mobileBurger.isOpen span:after {
+    .desktopNav #mobileBurger.isOpen span:after {
       -webkit-transform: rotate(-45deg);
               transform: rotate(-45deg);
       top: -3px; }
-  .desktopNav .siteLogo img {
-    height: 50px;
-    width: 50px;
-    padding: 15px 30px;
-    cursor: pointer; }
   .desktopNav .socialLogos {
     display: none; }
 
@@ -96,7 +94,14 @@ body {
           color: white;
           display: block;
           cursor: pointer; }
-    .desktopNav .mobileBurger {
+    .desktopNav .siteLogo {
+      display: block; }
+      .desktopNav .siteLogo img {
+        height: 50px;
+        width: 50px;
+        padding: 15px 30px;
+        cursor: pointer; }
+    .desktopNav #mobileBurger {
       display: none; }
     .desktopNav .socialLogos {
       display: block;
