@@ -1,8 +1,9 @@
 body
 	margin: 0
 	padding: 0
+	background: #262626
 
-.mobileNav
+#mobileNav
 	position: fixed
 	height: 100vh
 	width: 80%
@@ -12,7 +13,8 @@ body
 	background: #262626
 	font-family: $headerFont
 	filter: opacity(0.9)
-	z-index: 0
+	transition: all 0.3s ease-in-out
+	transform: translateX(-100%)
 
 	ul
 		margin: 0
@@ -51,6 +53,7 @@ body
 	justify-content: space-between
 	position: fixed
 	width: 100%
+	z-index: 1
 
 	ul
 		display: none
@@ -100,8 +103,11 @@ body
 	.socialLogos
 		display: none
 
+#mobileNav.isOpen
+	transform: translateX(0)
+
 @media (min-width: 775px)
-	.mobileNav
+	#mobileNav
 		display: none
 
 	#desktopNav.onScroll

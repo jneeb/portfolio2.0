@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE>
+<html>
 	<head>
 		<title>Justin Neeb | Toronto Front-End Developer</title>
 		<meta charset="utf-8" />
 		<link rel="stylesheet" href="/css/main.css">
-		<link rel="icon" href="/img/favicon.ico">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="/img/favicon.ico">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:600|Neuton|Pacifico" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
@@ -29,7 +29,7 @@
 					<a href="https://github.com/jneeb"><img src="/img/GitHub-Mark-Light-120px-plus.png" alt="GitHub"></a>
 				</div>
 			</div>
-			<div class="mobileNav">
+			<div id="mobileNav">
 				<ul>
 					<li><a id="mobileHomeLink" href="/">HOME</a></li>
 					<li><a id="mobileWorkLink" href="/#work">WORK</a></li>
@@ -45,7 +45,20 @@
 		</header>
 
 		<section id="aboutMe">
-			<div class="aboutBackground">
+			<video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
+				<source src="https://s3.amazonaws.com/bcm-static/static/encoded/r2-1080p/scene_3_7r.mp4" type="video/mp4">
+			</video>
+			<div class="aboutFlex">
+				<div class="aboutText">
+					<h2>ABOUT ME</h2>
+					<p>Hi, I'm Justin Neeb, a freelance Front-End Developer based out of Toronto, Ontario. When I am not working for clients in Toronto, I'm working for online agencies or on my side projects.</p>
+					<p>I have a diverse skillset when it comes to Front-End (HTML, CSS3, Javascript, Responsive Web Design) which allows me to create modern, mobile-first websites.</p>
+				</div>
+				<span class="line"></span>
+				<div class="contact">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<a href="/contact"><button><span>CONTACT ME</span></button></a>
+				</div>
 			</div>
 		</section>
 		<script src="/functions.js" type="text/javascript"></script>

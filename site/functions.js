@@ -1,8 +1,15 @@
-document.getElementById("mobileBurger").onclick = function() {
-	if (document.getElementById("mobileBurger").className !== "isOpen") {
-			document.getElementById("mobileBurger").className += "isOpen";
-		} else {
-			document.getElementById("mobileBurger").classList.remove("isOpen");
+var burger = document.getElementById("mobileBurger");
+var nav = document.getElementById("mobileNav");
+
+burger.onclick = navFunction;
+
+function navFunction() {
+	if (burger.className !== "isOpen") {
+		burger.className += "isOpen";
+		nav.className += "isOpen";
+	} else {
+		burger.classList.remove("isOpen");
+		nav.classList.remove("isOpen");
 	}
 }
 

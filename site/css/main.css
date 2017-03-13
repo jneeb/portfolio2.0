@@ -1,8 +1,9 @@
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  background: #262626; }
 
-.mobileNav {
+#mobileNav {
   position: fixed;
   height: 100vh;
   width: 80%;
@@ -20,22 +21,25 @@ body {
   font-family: "Montserrat", sans-serif;
   -webkit-filter: opacity(0.9);
           filter: opacity(0.9);
-  z-index: 0; }
-  .mobileNav ul {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%); }
+  #mobileNav ul {
     margin: 0;
     padding: 80px 0 0 25px; }
-    .mobileNav ul li {
+    #mobileNav ul li {
       list-style: none; }
-      .mobileNav ul li a {
+      #mobileNav ul li a {
         cursor: pointer;
         text-decoration: none;
         color: white;
         display: block;
         padding: 30px 0; }
-  .mobileNav .mobileLogos {
+  #mobileNav .mobileLogos {
     display: block;
     padding: 0 30px 20px 15px; }
-    .mobileNav .mobileLogos img {
+    #mobileNav .mobileLogos img {
       display: block;
       padding: 15px 10px;
       float: left;
@@ -44,7 +48,7 @@ body {
       -webkit-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
       cursor: pointer; }
-      .mobileNav .mobileLogos img:hover {
+      #mobileNav .mobileLogos img:hover {
         -webkit-transform: scale(1.3);
                 transform: scale(1.3); }
 
@@ -59,7 +63,8 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: fixed;
-  width: 100%; }
+  width: 100%;
+  z-index: 1; }
   #desktopNav ul {
     display: none; }
   #desktopNav #siteLogo {
@@ -109,8 +114,12 @@ body {
   #desktopNav .socialLogos {
     display: none; }
 
+#mobileNav.isOpen {
+  -webkit-transform: translateX(0);
+          transform: translateX(0); }
+
 @media (min-width: 775px) {
-  .mobileNav {
+  #mobileNav {
     display: none; }
   #desktopNav.onScroll {
     background: black;
@@ -183,7 +192,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100vh; }
+  height: 100vh;
+  z-index: -1; }
   #home img {
     position: absolute;
     -o-object-fit: cover;
@@ -193,44 +203,112 @@ body {
     z-index: -2; }
   #home .homeText {
     position: fixed;
-    text-align: center;
     font-size: 2em;
     color: white;
     z-index: -1; }
     #home .homeText h1 {
       font-family: "Pacifico", cursive; }
-    #home .homeText h4 {
+    #home .homeText h2 {
       font-family: "Montserrat", sans-serif;
-      font-size: 0.8em; }
+      font-size: 1.2em; }
     #home .homeText a {
       text-decoration: none;
       color: white;
       cursor: pointer; }
 
-@media (min-width: 775px) {
-  #home img {
-    -webkit-transform: scale(1);
-            transform: scale(1); } }
-
 #work {
-  height: 2000px;
-  background: #f1f1f1; }
+  height: 100vh;
+  background: #262626; }
 
 #aboutMe {
-  height: 100vh;
-  background-color: #262626; }
-  #aboutMe .aboutBackground {
-    font-family: "Montserrat", sans-serif;
-    font-size: 100px;
-    -webkit-filter: opacity(0.05);
-            filter: opacity(0.05);
-    -webkit-transform: translateX(10%);
-            transform: translateX(10%); }
-    #aboutMe .aboutBackground h2 {
-      padding: 20% 0 0 0;
-      margin: 0;
-      float: right; }
+  background: rgba(66, 134, 244, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100vh; }
+  #aboutMe video {
+    width: 100%;
+    height: 100vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+    z-index: -1;
+    position: fixed; }
+  #aboutMe .aboutFlex {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    #aboutMe .aboutFlex .aboutText {
+      margin-bottom: 25px;
+      z-index: 1;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      color: white; }
+      #aboutMe .aboutFlex .aboutText h2 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 2.2em;
+        margin: 0; }
+      #aboutMe .aboutFlex .aboutText p {
+        max-width: 700px;
+        text-align: center;
+        font-family: "Neuton", serif;
+        font-size: 1.2em;
+        margin: 20px 50px; }
+    #aboutMe .aboutFlex .line {
+      width: 50%;
+      height: 1px;
+      background: white; }
+    #aboutMe .aboutFlex .contact {
+      margin-top: 25px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      color: white; }
+      #aboutMe .aboutFlex .contact p {
+        max-width: 700px;
+        font-family: "Neuton", serif;
+        font-size: 1.2em;
+        margin: 20px 50px;
+        text-align: center; }
 
 #contact {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #262626;
   height: 100vh; }
