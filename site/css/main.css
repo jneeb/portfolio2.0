@@ -208,13 +208,16 @@ body {
     z-index: -1; }
     #home .homeText h1 {
       font-family: "Pacifico", cursive; }
-    #home .homeText h2 {
+    #home .homeText span {
       font-family: "Montserrat", sans-serif;
       font-size: 1.2em; }
     #home .homeText a {
       text-decoration: none;
       color: white;
       cursor: pointer; }
+
+.noShow {
+  display: none; }
 
 #work {
   height: 100vh;
