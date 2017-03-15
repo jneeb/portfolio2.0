@@ -12,6 +12,7 @@ body
 	justify-content: space-between
 	background: #262626
 	font-family: $headerFont
+	font-weight: 600
 	filter: opacity(0.9)
 	transition: all 0.3s ease-in-out
 	transform: translateX(-100%)
@@ -111,12 +112,13 @@ body
 		display: none
 
 	#desktopNav.onScroll
-		background: black
+		background: rgba(black, 0.7)
 		filter: invert(100)
 
 	#desktopNav
 		justify-content: space-between
 		font-family: $headerFont
+		font-weight: 600
 		align-items: center
 
 		ul
@@ -124,18 +126,20 @@ body
 			text-align: center
 			margin: 0
 			padding: 0
+			font-size: 12px
 
 			li
 				list-style: none
 				display: inline-block
 				text-align: center
-				padding: 15px 30px
+				padding: 15px 50px
 
 				a
 					text-decoration: none
 					color: white
 					display: block
 					cursor: pointer
+					padding: 15px 50px
 
 		#siteLogo
 			display: block
