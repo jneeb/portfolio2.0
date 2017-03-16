@@ -1,3 +1,94 @@
+.black
+	filter: invert(100)
+
+.black.isOpen
+	filter: invert(100)
+
 #contact
-	background-color: #262626
-	height: 100vh
+	background-color: #f1f1f1
+
+	.contactFlex
+		padding: 200px 10% 50px 10%
+
+		.contactText
+			text-align: center
+			font-family: $headerFont
+			margin: 0 20px 50px 20px
+			max-width: 500px
+			font-size: 25px
+
+			p
+				font-size: 13px
+
+				span
+					color: rgba(66, 134, 244, 1)
+
+		form
+			margin: 0
+			box-sizing: border-box
+
+			input
+				width: 100%
+				line-height: 16px
+				max-width: 700px
+				font-family: $headerFont
+				font-weight: 400
+				border: 3px solid rgba(0, 0, 0, 0.15)
+				margin: 0 0 10px 0
+				padding: 10px
+				border-radius: 2px
+
+				&:focus
+					outline: none
+
+			textarea
+				box-sizing: border-box
+				resize: none
+				font-family: $headerFont
+				font-weight: 400
+				width: 100%
+				max-width: 700px
+				border: 3px solid rgba(0, 0, 0, 0.15)
+				margin-bottom: 10px
+				padding: 10px
+				border-radius: 2px
+
+				&:focus
+					outline: none
+
+			button
+				cursor: pointer
+				font-family: $headerFont
+				background-color: inherit
+				box-sizing: border-box
+				border: 3px solid rgba(0, 0, 0, 0.15)
+				border-radius: 2px
+				padding: 10px
+				width: 100px
+				transition: all 0.3s ease
+				float: right
+
+				&:hover
+					background: #262626
+					color: white
+
+#map
+	z-index: 0
+	height: 400px
+	width: 100%
+
+#map.isOpen
+	z-index: -1
+
+@media (min-width: 775px)
+	.contactFlex
+		display: flex
+		align-items: center
+		justify-content: center
+
+		.contactForm
+			margin-left: 20px
+			max-width: 700px
+
+		.contactText
+			transform: translateY(-15%)

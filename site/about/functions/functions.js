@@ -1,7 +1,7 @@
 (function() {
 	var burger = document.getElementById("mobileBurger");
 	var nav = document.getElementById("mobileNav");
-	var btn = document.getElementById("homeBtn");
+	// var btn = document.getElementById("homeBtn");
 	var mobileWork = document.getElementById("mobileWorkLink");
 	// var map = document.getElementById("map");
 
@@ -12,12 +12,12 @@
 		if (burger.className !== "isOpen") {
 			burger.className += "isOpen";
 			nav.className += "isOpen";
-			btn.className += "isOpen";
+			// btn.className += "isOpen";
 			// map.className += "isOpen";
 		} else {
 			burger.classList.remove("isOpen");
 			nav.classList.remove("isOpen");
-			btn.classList.remove("isOpen");
+			// btn.classList.remove("isOpen");
 			// map.classList.remove("isOpen");
 		}
 	}
@@ -25,7 +25,7 @@
 		if (burger.className == "isOpen") {
 			burger.classList.remove("isOpen");
 			nav.classList.remove("isOpen");
-			btn.classList.remove("isOpen");
+			// btn.classList.remove("isOpen");
 		}
 	}
 }());

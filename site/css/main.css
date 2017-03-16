@@ -28,7 +28,7 @@ body {
           transform: translateX(-100%); }
   #mobileNav ul {
     margin: 0;
-    padding: 80px 0 0 25px; }
+    padding: 80px 0 0 0; }
     #mobileNav ul li {
       list-style: none; }
       #mobileNav ul li a {
@@ -36,7 +36,10 @@ body {
         text-decoration: none;
         color: white;
         display: block;
-        padding: 30px 0; }
+        padding: 30px 0 30px 25px; }
+        #mobileNav ul li a i {
+          padding: 0 15px 0 0;
+          font-size: 1.2em; }
   #mobileNav .mobileLogos {
     display: block;
     padding: 0 30px 20px 15px; }
@@ -145,19 +148,24 @@ body {
         list-style: none;
         display: inline-block;
         text-align: center;
-        padding: 15px 50px; }
+        padding: 15px 15px; }
         #desktopNav ul li a {
           text-decoration: none;
           color: white;
           display: block;
           cursor: pointer;
-          padding: 15px 50px; }
+          padding: 15px 15px;
+          -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out; }
+          #desktopNav ul li a:hover {
+            -webkit-transform: scale(1.2);
+                    transform: scale(1.2); }
     #desktopNav #siteLogo {
       display: block; }
       #desktopNav #siteLogo img {
         height: 50px;
         width: 50px;
-        padding: 15px 30px;
+        padding: 15px 85px 15px 30px;
         cursor: pointer;
         -webkit-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out; }
@@ -182,6 +190,10 @@ body {
           -webkit-transform: scale(1.3);
                   transform: scale(1.3); } }
 
+@media (min-width: 1200px) {
+  #desktopNav ul li a {
+    padding: 15px 50px; } }
+
 #home {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -197,44 +209,159 @@ body {
   z-index: -1;
   background: -webkit-linear-gradient(40deg, rgba(66, 134, 244, 0.5), rgba(66, 134, 244, 0.2));
   background: linear-gradient(50deg, rgba(66, 134, 244, 0.5), rgba(66, 134, 244, 0.2)); }
-  #home .heroBackground {
+
+@-webkit-keyframes test {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes test {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+body {
+  -webkit-animation: test 1.5s ease-in-out;
+          animation: test 1.5s ease-in-out; }
+  body .heroBackground {
     position: absolute;
     -o-object-fit: cover;
        object-fit: cover;
     width: 100%;
     height: 100vh;
     z-index: -1; }
-  #home .skyline {
+  body .skyline {
     position: absolute;
     -o-object-fit: cover;
        object-fit: cover;
     width: 100%;
     height: 100vh;
     z-index: -1; }
-  #home .homeText {
+  body .homeText {
     margin: 0 0 0 200px;
     font-size: 3em;
     color: white; }
-    #home .homeText h1 {
+    body .homeText h1 {
       font-family: "Montserrat", sans-serif;
       margin: 0; }
-    #home .homeText h2 {
+    body .homeText h2 {
       font-family: "Montserrat", sans-serif;
-      margin: 0; }
-    #home .homeText span {
+      margin: 0 0 20px 0; }
+    body .homeText .name {
       font-family: "Montserrat", sans-serif;
       font-weight: 400;
       font-size: 0.4em; }
-    #home .homeText a {
+    body .homeText a {
       text-decoration: none;
       color: white;
       cursor: pointer; }
+      body .homeText a button {
+        font-family: "Montserrat", sans-serif;
+        color: white;
+        cursor: pointer;
+        box-sizing: border-box;
+        background-color: inherit;
+        border: 2px solid white;
+        border-radius: 5px;
+        padding: 15px 15px;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; }
+        body .homeText a button:hover {
+          color: black;
+          background: white; }
+        body .homeText a button i {
+          padding: 0 0 0 5px; }
+
+button.isOpen {
+  z-index: -1; }
 
 .noShow {
   display: none; }
 
+@media (max-width: 1200px) {
+  #home {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    #home .homeText {
+      font-size: 2.5em;
+      margin: 0 20px 0 20px; }
+      #home .homeText button {
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%); } }
+
 #work {
-  height: 100vh; }
+  height: 400px;
+  background: #262626; }
+
+#contactLink {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white; }
+  #contactLink .line {
+    width: 70%;
+    height: 1px;
+    background: white;
+    margin: 0 0 30px 0; }
+  #contactLink p {
+    max-width: 700px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2em;
+    margin: 20px 50px;
+    text-align: center; }
+  #contactLink button {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    cursor: pointer;
+    box-sizing: border-box;
+    background-color: inherit;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 15px 15px;
+    margin: 0 0 50px 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+    #contactLink button:hover {
+      color: black;
+      background: white; }
+    #contactLink button i {
+      padding: 0 0 0 5px; }
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.8em; }
 
 #aboutMe {
   background: -webkit-linear-gradient(40deg, rgba(229, 66, 244, 0.5), rgba(66, 134, 244, 0.5));
@@ -292,14 +419,14 @@ body {
       #aboutMe .aboutFlex .aboutText h2 {
         font-family: "Montserrat", sans-serif;
         font-weight: 600;
-        font-size: 2.2em;
+        font-size: 46px;
         margin: 0; }
       #aboutMe .aboutFlex .aboutText p {
         max-width: 700px;
         text-align: center;
         font-family: "Montserrat", sans-serif;
         font-weight: 400;
-        font-size: 1.2em;
+        font-size: 14px;
         margin: 20px 50px; }
     #aboutMe .aboutFlex .line {
       width: 50%;
@@ -327,7 +454,115 @@ body {
         font-size: 1.2em;
         margin: 20px 50px;
         text-align: center; }
+      #aboutMe .aboutFlex .contact button {
+        font-family: "Montserrat", sans-serif;
+        color: white;
+        cursor: pointer;
+        box-sizing: border-box;
+        background-color: inherit;
+        border: 2px solid white;
+        border-radius: 5px;
+        padding: 15px 15px;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; }
+        #aboutMe .aboutFlex .contact button:hover {
+          color: black;
+          background: white; }
+        #aboutMe .aboutFlex .contact button i {
+          padding: 0 0 0 5px; }
+
+@media (min-width: 775px) {
+  #aboutMe .aboutFlex .aboutText p {
+    font-size: 1.2em; } }
+
+.black {
+  -webkit-filter: invert(100);
+          filter: invert(100); }
+
+.black.isOpen {
+  -webkit-filter: invert(100);
+          filter: invert(100); }
 
 #contact {
-  background-color: #262626;
-  height: 100vh; }
+  background-color: #f1f1f1; }
+  #contact .contactFlex {
+    padding: 200px 10% 50px 10%; }
+    #contact .contactFlex .contactText {
+      text-align: center;
+      font-family: "Montserrat", sans-serif;
+      margin: 0 20px 50px 20px;
+      max-width: 500px;
+      font-size: 25px; }
+      #contact .contactFlex .contactText p {
+        font-size: 13px; }
+        #contact .contactFlex .contactText p span {
+          color: #4286f4; }
+    #contact .contactFlex form {
+      margin: 0;
+      box-sizing: border-box; }
+      #contact .contactFlex form input {
+        width: 100%;
+        line-height: 16px;
+        max-width: 700px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        border: 3px solid rgba(0, 0, 0, 0.15);
+        margin: 0 0 10px 0;
+        padding: 10px;
+        border-radius: 2px; }
+        #contact .contactFlex form input:focus {
+          outline: none; }
+      #contact .contactFlex form textarea {
+        box-sizing: border-box;
+        resize: none;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        width: 100%;
+        max-width: 700px;
+        border: 3px solid rgba(0, 0, 0, 0.15);
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 2px; }
+        #contact .contactFlex form textarea:focus {
+          outline: none; }
+      #contact .contactFlex form button {
+        cursor: pointer;
+        font-family: "Montserrat", sans-serif;
+        background-color: inherit;
+        box-sizing: border-box;
+        border: 3px solid rgba(0, 0, 0, 0.15);
+        border-radius: 2px;
+        padding: 10px;
+        width: 100px;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        float: right; }
+        #contact .contactFlex form button:hover {
+          background: #262626;
+          color: white; }
+
+#map {
+  z-index: 0;
+  height: 400px;
+  width: 100%; }
+
+#map.isOpen {
+  z-index: -1; }
+
+@media (min-width: 775px) {
+  .contactFlex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .contactFlex .contactForm {
+      margin-left: 20px;
+      max-width: 700px; }
+    .contactFlex .contactText {
+      -webkit-transform: translateY(-15%);
+              transform: translateY(-15%); } }

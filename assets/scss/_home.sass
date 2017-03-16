@@ -1,11 +1,17 @@
 #home
 	display: flex
-	// align-items: center
 	justify-content: center
 	flex-direction: column
 	height: 100vh
 	z-index: -1
 	background: linear-gradient(50deg, rgba(66, 134, 244, 0.5), rgba(66, 134, 244, 0.2))
+
+@keyframes test
+	from {opacity: 0}
+	to {opacity: 1}
+
+body
+	animation: test 1.5s ease-in-out
 
 	.heroBackground
 		position: absolute
@@ -32,9 +38,9 @@
 
 		h2
 			font-family: $headerFont
-			margin: 0
+			margin: 0 0 20px 0
 
-		span
+		.name
 			font-family: $headerFont
 			font-weight: 400
 			font-size: 0.4em
@@ -44,5 +50,38 @@
 			color: white
 			cursor: pointer
 
+			button
+				font-family: $headerFont
+				color: white
+				cursor: pointer
+				box-sizing: border-box
+				background-color: inherit
+				border: 2px solid white
+				border-radius: 5px
+				padding: 15px 15px
+				transition: all 0.3s ease-in-out
+				&:hover
+					color: black
+					background: white
+
+				i
+					padding: 0 0 0 5px
+
+button.isOpen
+	z-index: -1
+
 .noShow
 	display: none
+
+@media (max-width: 1200px)
+	#home
+		align-items: center
+
+		.homeText
+			font-size: 2.5em
+			margin: 0 20px 0 20px
+
+			button
+				position: absolute
+				left: 50%
+				transform: translateX(-50%)
