@@ -29,16 +29,16 @@
 		}
 	}
 }());
-
-	window.onscroll = function() {
-	var header = document.getElementById("desktopNav");
-
-	if (window.pageYOffset >= window.innerHeight && header.className !== "onScroll") {
-		header.classList += "onScroll";
-	} else if(window.pageYOffset < window.innerHeight && header.className == "onScroll"){
-		header.classList.remove("onScroll");
-	}
-}
+// 
+// 	window.onscroll = function() {
+// 	var header = document.getElementById("desktopNav");
+//
+// 	if (window.pageYOffset >= window.innerHeight && header.className !== "onScroll") {
+// 		header.classList += "onScroll";
+// 	} else if(window.pageYOffset < window.innerHeight && header.className == "onScroll"){
+// 		header.classList.remove("onScroll");
+// 	}
+// }
 
 // function initMap() {
 // 		var uluru = {lat: 43.652881, lng: -79.379339};

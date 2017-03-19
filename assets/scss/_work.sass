@@ -1,9 +1,82 @@
 #work
-	height: 400px
-	background: #262626
+	background-color: rgba(38, 38, 38, 0.5)
+	height: 300px
+	z-index: 1
+
+	.workBackgroundImg
+		position: absolute
+		height: 300px
+		z-index: -1
+		width: 100%
+		object-fit: cover
+		transition: 0.8s ease-in-out
+		overflow: hidden
+
+	.workText
+		cursor: pointer
+		height: 300px
+		margin-left: 30px
+		display: flex
+		flex-direction: column
+		justify-content: flex-end
+		color: white
+		font-family: $headerFont
+
+		h2
+			margin: 0
+
+		span
+			width: 50px
+			height: 2px
+			display: block
+			background: rgba(66, 134, 244, 1)
+			margin: 20px 0
+
+		p
+			margin: 0 0 75px
+
+@media (min-width: 775px)
+	#work
+		height: 400px
+
+		.workBackgroundImg
+			height: 400px
+
+		.workText
+			margin-left: 10%
+			height: 400px
+
+			h2
+				font-size: 32px
+
+@media (min-width: 1000px)
+	#work
+
+		.workText
+			margin-left: 15%
+
+			h2
+				font-size: 40px
+
+@media (min-width: 1200px)
+	#work
+
+		.workText
+			// margin-left: 15%
+
+			h2
+				font-size: 45px
+
+@media (min-width: 1500px)
+	#work
+
+		.workText
+			// margin-left: 150px
+
+
 
 #contactLink
-	margin-top: 25px
+	margin-top: 50px
 	display: flex
 	align-items: center
 	justify-content: flex-start
