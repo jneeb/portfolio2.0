@@ -1,4 +1,4 @@
-<!-- <?php
+<?php
 session_start();
 function generateFormToken($form) {
 	$token = md5(uniqid(microtime(), true));
@@ -33,10 +33,8 @@ function show_error($myError)
 ?>
 	<html>
 	<body>
-
 	<b>Please correct the following test error:</b><br />
 	<?php echo $myError; ?>
-
 	</body>
 	</html>
 <?php
@@ -48,22 +46,19 @@ if (verifyFormToken('form1')) {
 	$email = check_input($_POST['email']);
 	$comments = check_input($_POST['comments'], "Please include a message.");
 	$subject = "Freelance Work";
-
 	if (!preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/", $email))
 	{
 	    show_error("E-mail address not valid");
 	}
-
 	$message = "Name: $name
 	Email: $email
 	Message: $comments";
-
 	mail($myemail, $subject, $message);
-	header('Location: thanks.html');
+	header('Location: index.html');
 	exit();
 } else {
 }
-?> -->
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -75,9 +70,9 @@ if (verifyFormToken('form1')) {
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600|Neuton|Pacifico" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
-	<!-- <?php
+	<?php
 	$newToken = generateFormToken('form1');
-	?> -->
+	?>
 	<body>
 		<header id="nav">
 			<div id="desktopNav">

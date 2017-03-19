@@ -584,7 +584,8 @@ footer {
         padding: 10px;
         border-radius: 2px; }
         #contact .contactFlex form input:focus {
-          outline: none; }
+          outline: none;
+          border: 3px solid #262626; }
       #contact .contactFlex form textarea {
         box-sizing: border-box;
         resize: none;
@@ -597,7 +598,8 @@ footer {
         padding: 10px;
         border-radius: 2px; }
         #contact .contactFlex form textarea:focus {
-          outline: none; }
+          outline: none;
+          border: 3px solid #262626; }
       #contact .contactFlex form button {
         cursor: pointer;
         font-family: "Montserrat", sans-serif;
