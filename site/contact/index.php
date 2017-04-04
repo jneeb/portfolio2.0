@@ -54,7 +54,7 @@ if (verifyFormToken('form1')) {
 	Email: $email
 	Message: $comments";
 	mail($myemail, $subject, $message);
-	header('Location: index.html');
+	header('Location: index.php');
 	exit();
 } else {
 }
