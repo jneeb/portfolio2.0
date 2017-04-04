@@ -13,7 +13,6 @@
 		overflow: hidden
 
 	.workText
-		cursor: pointer
 		height: 300px
 		margin-left: 30px
 		display: flex
@@ -25,7 +24,7 @@
 		h2
 			margin: 0
 
-		span
+		.divider
 			width: 50px
 			height: 2px
 			display: block
@@ -33,7 +32,40 @@
 			margin: 20px 0
 
 		p
-			margin: 0 0 75px
+			margin: 0 0 30px 0
+
+		.buttonFlex
+			margin-bottom: 20px
+
+			button
+				box-sizing: border-box
+				width: 125px
+				font-size: 15px
+				background-color: inherit
+				border: 2px solid white
+				color: white
+				padding: 15px 15px
+				border-radius: 5px
+				font-family: $headerFont
+				font-weight: 400
+				transition: all 0.3s ease-in-out
+				cursor: pointer
+
+				&:hover
+					color: black
+					background: white
+
+			button.live
+				margin-left: 10px
+				background: rgba(66, 134, 244, 1)
+				border: 2px solid rgba(66, 134, 244, 1)
+
+				&:hover
+					color: black
+					background: white
+					border: 2px solid white
+
+
 
 @media (min-width: 775px)
 	#work
@@ -58,22 +90,27 @@
 			h2
 				font-size: 40px
 
+			.buttonFlex
+				margin-bottom: 75px
+
 @media (min-width: 1200px)
 	#work
 
 		.workText
-			// margin-left: 15%
 
 			h2
 				font-size: 45px
+
+			p span
+				padding: 20px
+
+			p span.first
+				padding: 20px 20px 20px 0
 
 @media (min-width: 1500px)
 	#work
 
 		.workText
-			// margin-left: 150px
-
-
 
 #contactLink
 	margin-top: 50px

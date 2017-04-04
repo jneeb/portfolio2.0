@@ -316,7 +316,6 @@ button.isOpen {
     transition: 0.8s ease-in-out;
     overflow: hidden; }
   #work .workText {
-    cursor: pointer;
     height: 300px;
     margin-left: 30px;
     display: -webkit-box;
@@ -333,14 +332,41 @@ button.isOpen {
     font-family: "Montserrat", sans-serif; }
     #work .workText h2 {
       margin: 0; }
-    #work .workText span {
+    #work .workText .divider {
       width: 50px;
       height: 2px;
       display: block;
       background: #4286f4;
       margin: 20px 0; }
     #work .workText p {
-      margin: 0 0 75px; }
+      margin: 0 0 30px 0; }
+    #work .workText .buttonFlex {
+      margin-bottom: 20px; }
+      #work .workText .buttonFlex button {
+        box-sizing: border-box;
+        width: 125px;
+        font-size: 15px;
+        background-color: inherit;
+        border: 2px solid white;
+        color: white;
+        padding: 15px 15px;
+        border-radius: 5px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer; }
+        #work .workText .buttonFlex button:hover {
+          color: black;
+          background: white; }
+      #work .workText .buttonFlex button.live {
+        margin-left: 10px;
+        background: #4286f4;
+        border: 2px solid #4286f4; }
+        #work .workText .buttonFlex button.live:hover {
+          color: black;
+          background: white;
+          border: 2px solid white; }
 
 @media (min-width: 775px) {
   #work {
@@ -357,11 +383,17 @@ button.isOpen {
   #work .workText {
     margin-left: 15%; }
     #work .workText h2 {
-      font-size: 40px; } }
+      font-size: 40px; }
+    #work .workText .buttonFlex {
+      margin-bottom: 75px; } }
 
 @media (min-width: 1200px) {
   #work .workText h2 {
-    font-size: 45px; } }
+    font-size: 45px; }
+  #work .workText p span {
+    padding: 20px; }
+  #work .workText p span.first {
+    padding: 20px 20px 20px 0; } }
 
 #contactLink {
   margin-top: 50px;
