@@ -678,3 +678,53 @@ footer {
       -webkit-transform: translateY(-15%);
               transform: translateY(-15%);
       padding-top: 100px; } }
+
+html.atreoPage {
+  background: #f1f1f1; }
+
+body.atreoPage {
+  background: #f1f1f1; }
+
+footer.atreoPage {
+  background: #262626; }
+
+#contactLink.atreoPage {
+  background: #262626;
+  margin-top: 0;
+  padding-top: 50px; }
+
+#atreoHero {
+  background: #f1f1f1;
+  padding: 80px 10px 10px 10px;
+  color: #262626; }
+  #atreoHero h1 {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    font-size: 36px; }
+  #atreoHero .heroDivider {
+    background: #4286f4;
+    height: 2px;
+    width: 100px;
+    display: block;
+    margin: 20px 0; }
+  #atreoHero p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    font-size: 14px; }
+
+#atreoDescription {
+  padding: 10px 10px;
+  font-family: "Montserrat", sans-serif;
+  color: #262626; }
+  #atreoDescription h2 {
+    margin: 0;
+    padding-bottom: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 5px; }
+  #atreoDescription p {
+    margin: 0;
+    line-height: 25px;
+    font-size: 14px;
+    max-width: 675px; }

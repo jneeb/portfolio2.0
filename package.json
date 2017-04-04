@@ -1,7 +1,7 @@
 {
   "name": "portfolio2.0",
   "version": "1.0.0",
-  "description": "Version 2 of personal portfolio",
+  "description": "",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
