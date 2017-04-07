@@ -526,7 +526,8 @@ footer {
         font-family: "Montserrat", sans-serif;
         font-weight: 400;
         font-size: 14px;
-        margin: 5px 50px; }
+        margin: 5px 50px;
+        line-height: 20px; }
     #aboutMe .aboutFlex .line {
       width: 50%;
       height: 1px;
@@ -574,7 +575,8 @@ footer {
     font-size: 55px; }
   #aboutMe .aboutFlex .aboutText p {
     font-size: 20px;
-    margin: 20px 50px; }
+    margin: 20px 50px;
+    line-height: 25px; }
   #aboutMe .aboutFlex .contact {
     margin: 20px 50px; }
     #aboutMe .aboutFlex .contact p {
