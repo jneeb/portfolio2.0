@@ -14,20 +14,14 @@ footer.atreoPage
 
 #atreoHero
 	background: #f1f1f1
-	padding: 80px 10px 10px 10px
+	padding: 80px 10px 30px 10px
 	color: #262626
-	// display: flex
-	// justify-content: center
-	// align-items: center
-	// flex-direction: column
-	// text-align: center
 
 	h1
 		font-family: $headerFont
-		font-size:
 		margin: 0
 		// padding-top: 80px
-		font-size: 36px
+		font-size: 34px
 
 	.heroDivider
 		background: rgba(66, 134, 244, 1)
@@ -59,3 +53,100 @@ footer.atreoPage
 		line-height: 25px
 		font-size: 14px
 		max-width: 675px
+
+#atreoSite
+	padding: 30px 10px 50px 10px
+	text-align: center
+	font-family: $headerFont
+	color: #262626
+
+	h2
+		font-size: 30px
+
+	p
+		line-height: 25px
+		font-size: 14px
+
+	.imageFlex
+		padding-top: 50px
+
+		img
+			width: auto
+			height: 250px
+
+
+		img.mobile
+			display: none
+
+	button
+		box-sizing: border-box
+		margin-top: 30px
+		padding: 15px 15px
+		background-color: inherit
+		border: 2px solid rgba(66, 134, 244, 1)
+		border-radius: 5px
+		font-family: $headerFont
+		font-weight: 400
+		font-size: 13px
+		transition: all 0.3s ease-in-out
+		cursor: pointer
+
+		&:hover
+			background: rgba(66, 134, 244, 1)
+			color: white
+
+@media (min-width: 775px)
+	#atreoHero
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		text-align: left
+
+	#atreoDescription
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		text-align: left
+
+		p
+			text-align: center
+
+	#atreoSite
+
+		.titleFlex
+			display: flex
+			justify-content: center
+			align-items: center
+
+			span
+				box-sizing: border-box
+				margin: 0 50px
+				width: 20%
+				max-width: 275px
+				height: 1px
+				background: rgba(66, 134, 244, 1)
+				display: block
+
+		.imageFlex
+			display: flex
+			justify-content: center
+			align-items: center
+			box-sizing: border-box
+			overflow: hidden
+			margin: 0 80px
+
+			img
+				display: block
+				width: auto
+				height: 250px
+
+
+			img.mobile
+				display: block
+				margin-left: 30px
+
+@media (min-width: 900px)
+	#atreoSite .imageFlex img
+		height: 300px

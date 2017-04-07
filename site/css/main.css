@@ -695,12 +695,12 @@ footer.atreoPage {
 
 #atreoHero {
   background: #f1f1f1;
-  padding: 80px 10px 10px 10px;
+  padding: 80px 10px 30px 10px;
   color: #262626; }
   #atreoHero h1 {
     font-family: "Montserrat", sans-serif;
     margin: 0;
-    font-size: 36px; }
+    font-size: 34px; }
   #atreoHero .heroDivider {
     background: #4286f4;
     height: 2px;
@@ -728,3 +728,113 @@ footer.atreoPage {
     line-height: 25px;
     font-size: 14px;
     max-width: 675px; }
+
+#atreoSite {
+  padding: 30px 10px 50px 10px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #262626; }
+  #atreoSite h2 {
+    font-size: 30px; }
+  #atreoSite p {
+    line-height: 25px;
+    font-size: 14px; }
+  #atreoSite .imageFlex {
+    padding-top: 50px; }
+    #atreoSite .imageFlex img {
+      width: auto;
+      height: 250px; }
+    #atreoSite .imageFlex img.mobile {
+      display: none; }
+  #atreoSite button {
+    box-sizing: border-box;
+    margin-top: 30px;
+    padding: 15px 15px;
+    background-color: inherit;
+    border: 2px solid #4286f4;
+    border-radius: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer; }
+    #atreoSite button:hover {
+      background: #4286f4;
+      color: white; }
+
+@media (min-width: 775px) {
+  #atreoHero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: left; }
+  #atreoDescription {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: left; }
+    #atreoDescription p {
+      text-align: center; }
+  #atreoSite .titleFlex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    #atreoSite .titleFlex span {
+      box-sizing: border-box;
+      margin: 0 50px;
+      width: 20%;
+      max-width: 275px;
+      height: 1px;
+      background: #4286f4;
+      display: block; }
+  #atreoSite .imageFlex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0 80px; }
+    #atreoSite .imageFlex img {
+      display: block;
+      width: auto;
+      height: 250px; }
+    #atreoSite .imageFlex img.mobile {
+      display: block;
+      margin-left: 30px; } }
+
+@media (min-width: 900px) {
+  #atreoSite .imageFlex img {
+    height: 300px; } }
