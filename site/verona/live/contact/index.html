@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+	<link rel="stylesheet" href="/css/main.css" media="screen"/>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:600|Open+Sans:300|Damion" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<header>
+		<div id="desktopNav" class="onScroll">
+			<a href="/" class="logo">Verona</a>
+			<ul>
+				<li><a href="/">HOME</a></li>
+				<li><a href="/menu/index.html">MENU</a></li>
+				<li class="activeMenu"><a href="/contact">CONTACT</a></li>
+			</ul>
+			<div class="socialLinks">
+				<a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+				<a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+				<a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			</div>
+		</div>
+		<div class="mobileNav">
+			<div class="mobileLogo">
+				<a class="mobilelogo">Verona</a>
+			</div>
+			<div id="mobileNavBurger">
+				<span></span>
+			</div>
+			<div id="mobileNavSlider">
+				<ul>
+					<li><a href="/">HOME</a></li>
+					<li><a href="/menu">MENU</a></li>
+					<li><a href="/contact">CONTACT</a></li>
+				</ul>
+				<div class="mobileSocialLinks">
+					<a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+					<a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div id="contactHero" class="contactTitle">
+		<h2>CONTACT US</h2>
+		<h4>We love to hear feedback. Tell us about your experience</h4>
+	</div>
+
+	<section class="contactFlex">
+		<div class="location">
+			<div class="contactLocation">
+				<h4>Location</h4>
+				<p>5555 Brock Ave, Toronto Ontario</p>
+			</div>
+			<div class="contactHours">
+				<h4>Hours</h4>
+				<p>Mon - Thurs</p>
+				<p>9:00am - 8:00pm</p>
+				<p>Fri - Sun</p>
+				<p>9:00am - 5:00pm</p>
+			</div>
+			<div class="contactNumber">
+				<h4>Number</h4>
+				<p>(555) 123 1234</p>
+			</div>
+		</div>
+		<div class="contactForm">
+			<form>
+				<input type="hidden" name="token">
+				<input type="text" name="name" placeholder="Name">
+				<input type="text" name="email" placeholder="Email">
+				<textarea name="comments" placeholder="Message" cols="30" rows="10"></textarea>
+				<button type="submit" name="submit">Send</button>
+			</form>
+		</div>
+	</section>
+	<div id="map"></div>
+
+	<section class="siteLinks">
+		<div class="address">
+			<h4>Location</h4>
+			<p>5555 Brock Ave, Toronto</p>
+		</div>
+		<div class="hours">
+			<h4>Hours</h4>
+			<p>Mon-Thurs</p>
+			<p>9:00am - 8:00pm</p>
+			<p>Fri-Sun</p>
+			<p>9:00am - 5:00pm</p>
+		</div>
+		<div class="footerLinks">
+			<h4>Social</h4>
+			<p>Facebook</p>
+			<p>Twitter</p>
+			<p>Instagram</p>
+		</div>
+	</section>
+
+</body>
+
+<footer class="siteFooter">
+	<a href="#contactHero" class="backToTop">Back To Top</a>
+	<p>
+		&copy;2017 Handcrafted by <a href="http://justinneeb.com"><u>Justin Neeb</u></a>
+	</p>
+</footer>
+
+<script src="/functions/burger.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtOHi-D41sqHHFyKormXrD3gmeM8vIbXs&callback=initMap"></script>
+<script src="/functions/mapAPI.js"></script>
+<script type="text/javascript" src="/functions/smoothScroll.js"></script>
+</html>
