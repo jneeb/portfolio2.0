@@ -370,12 +370,12 @@ button.isOpen {
 
 @media (min-width: 775px) {
   #work {
-    height: 400px; }
+    height: 600px; }
     #work .workBackgroundImg {
-      height: 400px; }
+      height: 600px; }
     #work .workText {
       margin-left: 10%;
-      height: 400px; }
+      height: 600px; }
       #work .workText h2 {
         font-size: 32px; } }
 
