@@ -49,9 +49,7 @@ h6 {
   display: none; }
 
 #desktopNav.onScroll {
-  background: black;
-  -webkit-filter: invert(100);
-          filter: invert(100); }
+  background: white; }
 
 .mobileNav {
   font-family: "Montserrat", sans-serif;
@@ -168,6 +166,8 @@ h6 {
     display: none; }
   #desktopNav ul .activeMenu a {
     border-bottom: 2px solid white; }
+  #desktopNav ul .activeMenu a.onScroll {
+    border-bottom: 2px solid black; }
   #desktopNav {
     font-family: "Montserrat", sans-serif;
     position: fixed;
@@ -184,6 +184,10 @@ h6 {
       transition: all 0.3s ease-in-out;
       padding-left: 20px; }
       #desktopNav .logo:hover {
+        color: #dfa671; }
+    #desktopNav .logo.onScroll {
+      color: black; }
+      #desktopNav .logo.onScroll:hover {
         color: #dfa671; }
     #desktopNav ul {
       position: absolute;
@@ -203,6 +207,10 @@ h6 {
           font-size: 13px; }
           #desktopNav ul li a:hover {
             border-bottom: 2px solid white; }
+        #desktopNav ul li a.onScroll {
+          color: black; }
+          #desktopNav ul li a.onScroll:hover {
+            border-bottom: 2px solid black; }
     #desktopNav .socialLinks {
       position: absolute;
       right: 0;
@@ -219,7 +227,11 @@ h6 {
           color: #dfa671; }
         #desktopNav .socialLinks a i {
           text-align: center;
-          width: 20px; } }
+          width: 20px; }
+      #desktopNav .socialLinks a.onScroll {
+        color: black; }
+        #desktopNav .socialLinks a.onScroll:hover {
+          color: #dfa671; } }
 
 #homeHero {
   height: 100vh;
@@ -285,6 +297,18 @@ h6 {
     margin: 20px 20px;
     padding: 10px 10px;
     box-sizing: border-box; }
+    .homeFlex span h2 {
+      margin-bottom: 10px; }
+    .homeFlex span a {
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+      margin-top: 10px;
+      border-bottom: 2px solid black;
+      -webkit-transition: 0.3s all ease-in-out;
+      transition: 0.3s all ease-in-out; }
+      .homeFlex span a:hover {
+        color: #dfa671;
+        border-bottom: 2px solid #dfa671; }
   .homeFlex img {
     height: 200px;
     width: 80%;
