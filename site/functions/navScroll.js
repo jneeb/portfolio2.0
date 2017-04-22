@@ -10,8 +10,8 @@
 		} else if (window.pageYOffset < window.innerHeight && header.className == "onScroll") {
 			header.classList.remove("onScroll");
 			$("#desktopNav ul a").removeClass("onScroll");
-			$("#desktopNav .logo").removeClass("onScroll");
 			$(".socialLinks a").removeClass("onScroll");
+			$("#desktopNav .logo").removeClass("onScroll");
 		}
 	}
 }());
