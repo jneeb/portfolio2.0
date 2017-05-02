@@ -482,17 +482,25 @@ h6 {
         border-bottom: 2px solid #dfa671; }
 
 .menuLayout {
-  padding: 50px 20px; }
+  padding: 50px 20px;
+  height: 1100px; }
   .menuLayout #breakfastMenu, .menuLayout #lunchMenu, .menuLayout #dinnerMenu {
-    display: none;
-    width: 100%; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90%;
+    position: absolute;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
     .menuLayout #breakfastMenu .menuSection, .menuLayout #lunchMenu .menuSection, .menuLayout #dinnerMenu .menuSection {
       padding: 0 10px;
       max-width: 550px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      width: 100%;
+      width: 90%;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
@@ -536,54 +544,11 @@ h6 {
 .menuItem.highlight {
   border: 2px solid #262626; }
 
-#breakfastMenu.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+#lunchMenu.noShow {
+  opacity: 0; }
 
-#lunchMenu.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-filter: opacity(100);
-          filter: opacity(100); }
-
-#dinnerMenu.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-filter: opacity(100);
-          filter: opacity(100);
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+#dinnerMenu.noShow {
+  opacity: 0; }
 
 h3.active {
   color: #dfa671;
@@ -593,22 +558,24 @@ h3.active {
   .menuPages {
     -webkit-transform: translateX(-14px);
             transform: translateX(-14px); }
-  .menuLayout #breakfastMenu, .menuLayout #lunchMenu, .menuLayout #dinnerMenu {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-    .menuLayout #breakfastMenu .menuSection:nth-child(2), .menuLayout #lunchMenu .menuSection:nth-child(2), .menuLayout #dinnerMenu .menuSection:nth-child(2) {
-      padding-top: 0; }
-  .menuLayout .dinnerMenu .menuSection:nth-child(1) {
-    margin-bottom: 68px; }
-  .menuLayout .lunchMenu .menuSection:nth-child(1) {
-    margin-bottom: 68px; }
-  .menuLayout .breakfastMenu .menuSection:nth-child(1) {
-    margin-bottom: 45px; } }
+  .menuLayout {
+    height: 500px; }
+    .menuLayout #breakfastMenu, .menuLayout #lunchMenu, .menuLayout #dinnerMenu {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .menuLayout #breakfastMenu .menuSection:nth-child(2), .menuLayout #lunchMenu .menuSection:nth-child(2), .menuLayout #dinnerMenu .menuSection:nth-child(2) {
+        padding-top: 0; }
+    .menuLayout .dinnerMenu .menuSection:nth-child(1) {
+      margin-bottom: 68px; }
+    .menuLayout .lunchMenu .menuSection:nth-child(1) {
+      margin-bottom: 68px; }
+    .menuLayout .breakfastMenu .menuSection:nth-child(1) {
+      margin-bottom: 45px; } }
 
 .contactTitle {
   padding-top: 80px;
